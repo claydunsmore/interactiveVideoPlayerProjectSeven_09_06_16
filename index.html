@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta name="description" content="Clay Dunsmore's Interactive Video Player Project 7">
+    <title>Project 7: Interactive Video Player - Clay Dunsmore</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="container1" class="center1">
+    <div id="videoContainer">
+        <video id="video" class="center2">
+            <source src="videos/video.mp4" type="video/mp4"/>
+            <source src="videos/video.ogg" type="video/ogg"/>
+        </video>
+        <div id="videoControls">
+            <div id="seekbarDiv">
+                <input type="range" id="seekBar" min="1" max="100" value="1" step="1">
+            </div>
+            <div class="hidden">
+                <button type="button" id="playPause"><img src="img/play-icon.png" alt="play"></button>
+                <span id="currentTimeText" class="dash"></span><span class="dash">/</span><span id="durationTimeText" class="dash"></span>
+                <button type="button" id="fullScreen" class="right"><img src="img/fullscreen-icon.png" alt="fullscreen"></button>
+                <button type="button" id="mute" class="right"><img src="img/volume-off-icon.png" alt="mute"></button>
+            </div>
+        </div>
+    </div>
+    <p id="subtitles">
+        <span id="c_0" class="black">Now</span> <span id="c_1" class="black">that</span> <span id="c_2" class="black">we've</span> <span id="c_3" class="black">looked</span> <span id="c_4" class="black">at</span> <span id="c_5" class="black">the</span> <span id="c_6" class="black">architecture</span> <span id="c_7" class="black">of</span> <span id="c_8" class="black">the</span> <span id="c_9" class="black">internet,</span> <span id="c_10" class="black" >let's</span> <span id="c_11" class="black">see</span> <span id="c_12" class="black">how</span> <span id="c_13" class="black">you</span> <span id="c_14" class="black">might</span>
+        <span id="c_15" class="black">connect</span> <span id="c_16" class="black">your</span> <span id="c_17" class="black">personal</span> <span id="c_18" class="black">devices</span> <span id="c_19" class="black">to</span> <span id="c_20" class="black">the</span> <span id="c_21" class="black">internet</span> <span id="c_22" class="black">inside</span> <span id="c_23" class="black">your</span> <span id="c_24" class="black">house.</span> <span id="c_25" class="black">Well</span> <span id="c_26" class="black">there</span> <span id="c_27" class="black">are</span> <span id="c_28" class="black">many</span>
+        <span id="c_29" class="black">ways</span> <span id="c_30" class="black">to</span> <span id="c_31" class="black">connect</span> <span id="c_32" class="black">to</span> <span id="c_33" class="black">the</span> <span id="c_34" class="black">internet,</span> <span id="c_35" class="black">and</span> <span id="c_36" class="black">most</span> <span id="c_37" class="black">often</span> <span id="c_38" class="black">people</span> <span id="c_39" class="black">connect</span> <span id="c_40" class="black">wirelessly.</span> <span id="c_41" class="black">Let's</span> <span id="c_42" class="black">look</span>
+        <span id="c_43" class="black">at</span> <span id="c_44" class="black">an</span> <span id="c_45" class="black">example</span> <span id="c_46" class="black">of</span> <span id="c_47" class="black">how</span> <span id="c_48" class="black">you</span> <span id="c_49" class="black">can</span> <span id="c_50" class="black">connect</span> <span id="c_51" class="black">to</span> <span id="c_52" class="black" >the</span> <span id="c_53" class="black">internet.</span> <span id="c_54" class="black">If</span> <span id="c_55" class="black">you</span> <span id="c_56" class="black">live</span> <span id="c_57" class="black">in</span> <span id="c_58" class="black">a</span> <span id="c_59" class="black">city</span> <span id="c_60" class="black">or</span> <span id="c_61" class="black">a</span> <span id="c_62" class="black">town,</span>
+        <span id="c_63" class="black">you</span> <span id="c_64" class="black">probably</span> <span id="c_65" class="black">have</span> <span id="c_66" class="black">a</span> <span id="c_67" class="black">coaxial</span> <span id="c_68" class="black">cable</span> <span id="c_69" class="black">for</span> <span id="c_70" class="black">cable</span> <span id="c_71" class="black">Internet,</span> <span id="c_72" class="black">or</span> <span id="c_73" class="black">a</span> <span id="c_74" class="black">phone</span> <span id="c_75" class="black">line</span> <span id="c_76" class="black">if</span> <span id="c_77" class="black">you</span> <span id="c_78" class="black">have</span> <span id="c_79" class="black">DSL,</span>
+        <span id="c_80" class="black">running</span> <span id="c_81" class="black">to</span> <span id="c_82" class="black">the</span> <span id="c_83" class="black">outside</span> <span id="c_84" class="black">of</span> <span id="c_85" class="black">your</span> <span id="c_86" class="black">house,</span> <span id="c_87" class="black">that</span> <span id="c_88" class="black">connects</span> <span id="c_89" class="black">you</span> <span id="c_90" class="black">to</span> <span id="c_91" class="black">the</span> <span id="c_92" class="black">Internet</span> <span id="c_93" class="black">Service</span> <span id="c_94" class="black">Provider,</span>
+        <span id="c_95" class="black">or</span> <span id="c_96" class="black">ISP.</span> <span id="c_97" class="black">If</span> <span id="c_98" class="black">you</span> <span id="c_99" class="black">live</span> <span id="c_100" class="black">far</span> <span id="c_101" class="black">out</span> <span id="c_102" class="black">in</span> <span id="c_103" class="black">the</span> <span id="c_104" class="black">country,</span> <span id="c_105" class="black">you'll</span> <span id="c_106" class="black">more</span> <span id="c_107" class="black">likely</span> <span id="c_108" class="black">have</span> <span id="c_109" class="black">a</span> <span id="c_110" class="black">dish</span> <span id="c_111" class="black">outside</span>
+        <span id="c_112" class="black">your</span> <span id="c_113" class="black">house,</span> <span id="c_114" class="black">connecting</span> <span id="c_115" class="black">you</span> <span id="c_116" class="black">wirelessly</span> <span id="c_117" class="black">to</span> <span id="c_118" class="black">your</span> <span id="c_119" class="black">closest</span> <span id="c_120" class="black">ISP,</span> <span id="c_121" class="black">or</span> <span id="c_122" class="black">you</span> <span id="c_123" class="black">might</span> <span id="c_124" class="black">also</span> <span id="c_125" class="black">use</span> <span id="c_126" class="black">the</span>
+        <span id="c_127" class="black">telephone</span> <span id="c_128" class="black">system.</span> <span id="c_129" class="black">Whether</span> <span id="c_130" class="black">a</span> <span id="c_131" class="black">wire</span> <span id="c_132" class="black">comes</span> <span id="c_133" class="black" >straight</span> <span id="c_134" class="black">from</span> <span id="c_135" class="black">the</span> <span id="c_136" class="black">ISP</span> <span id="c_137" class="black">hookup</span> <span id="c_138" class="black">outside</span> <span id="c_139" class="black">your</span> <span id="c_140" class="black">house,</span>
+        <span id="c_141" class="black">or</span> <span id="c_142" class="black">it</span> <span id="c_143" class="black">travels</span> <span id="c_144" class="black">over</span> <span id="c_145" class="black">radio</span> <span id="c_146" class="black">waves</span> <span id="c_147" class="black">from</span> <span id="c_148" class="black">your</span> <span id="c_149" class="black">roof,</span> <span id="c_150" class="black">the</span> <span id="c_151" class="black">first</span> <span id="c_152" class="black">stop</span> <span id="c_153" class="black">a</span> <span id="c_154" class="black">wire</span> <span id="c_155" class="black">will</span> <span id="c_156" class="black">make</span> <span id="c_157" class="black">once</span>
+        <span id="c_158" class="black">inside</span> <span id="c_160" class="black">your</span> <span id="c_161" class="black">house,</span> <span id="c_162" class="black">is</span> <span id="c_163" class="black">at</span> <span id="c_164" class="black">your</span> <span id="c_165" class="black">modem.</span> <span id="c_166" class="black">A</span> <span id="c_167" class="black">modem</span> <span id="c_168" class="black">is</span> <span id="c_169" class="black">what</span> <span id="c_170" class="black">connects</span> <span id="c_171" class="black">the</span> <span id="c_172" class="black">internet</span> <span id="c_173" class="black">to</span> <span id="c_174" class="black">your</span>
+        <span id="c_175" class="black">network</span> <span id="c_176" class="black">at</span> <span id="c_177" class="black">home.</span> <span id="c_178" class="black">A</span> <span id="c_179" class="black">few</span> <span id="c_180" class="black">common</span> <span id="c_181" class="black">residential</span> <span id="c_182" class="black">modems</span> <span id="c_183" class="black">are</span>
+    </p>
+</div>
+    <script  src="js/seekBar.js"></script>
+    <script  src="js/playPause.js"></script>
+    <script  src="js/mute.js"></script>
+    <script  src="js/fullScreen.js"></script>
+    <script src="js/interactive.js"></script>
+</body>
+</html>
+
