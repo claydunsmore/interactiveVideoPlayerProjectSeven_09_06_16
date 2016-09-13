@@ -38,8 +38,12 @@
 
     video.addEventListener("timeupdate", function(e){
         syncData.forEach(function(element, index, array){
-            if( video.currentTime >= element.start && video.currentTime <= element.end )
+            if( video.currentTime >= element.start && video.currentTime <= element.end ) {
                 subtitles.children[index].style.color = 'orange';
+            }
+            else if(video.currentTime <= element.start || video.currentTime >= element.end) {
+                subtitles.children[index].style.color = "black";
+            }
         });
     });
 }(window, document));
